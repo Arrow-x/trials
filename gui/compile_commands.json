@@ -1,0 +1,6 @@
+[
+    {
+        "directory": "/home/arrowx/Desktop/gui",
+        "command": "g++ -g -O0 -std=c++2a -Ilibs/EABASE/include/Common -Ilibs/EASTL/include src/main.cpp -o autocraft_out/bin/EASTL_test -Llibs/EASTL/build -lEASTL ",
+        "file": "src/main.cpp "
+    } ]

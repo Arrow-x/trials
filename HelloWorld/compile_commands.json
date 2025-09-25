@@ -1,0 +1,7 @@
+
+[
+    {
+        "directory": "/home/arrowx/Desktop/HelloWorld",
+        "command": "g++ g++ -std=gnu++26 -fmodules ",
+        "file": "hello.cpp "
+    } ]
