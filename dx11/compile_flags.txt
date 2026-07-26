@@ -1,0 +1,6 @@
+-xc++
+-std=c++17
+-target
+x86_64-windows-gnu
+-D_WIN32
+-I/usr/lib/zig/libc/include/any-windows-any/

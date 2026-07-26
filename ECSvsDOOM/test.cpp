@@ -40,7 +40,7 @@ void fat_struct_update() {
     entity.armor += entity.extraInt1;
     entity.damage += 10 - entity.armor;
     entity.health -= entity.damage;
-    entity.state *= 1.1f;
+    entity.state *= entity.extraData2;
     entity.extraData1 = entity.extraData1 * 0.99f + entity.extraData2;
     entity.extraData2 = entity.extraData2 * 0.98f + entity.extraData3;
     entity.extraData3 = entity.extraData3 * 0.97f + entity.extraData4;
@@ -122,10 +122,10 @@ void soa_update() {
     positions[i].x += velocities[i].velocityX;
     positions[i].y += velocities[i].velocityY;
     positions[i].z += velocities[i].velocityZ;
-    combats[i].health += 5;
-    combats[i].armor += 3;
+    combats[i].health += extraData[i].extraData2;
+    combats[i].armor += extraData[i].extraData4;
     combats[i].damage += 2;
-    states[i].state *= 1.1f;
+    states[i].state *= extraFloats[i].extraFloat1;
     extraData[i].extraData1 =
         extraData[i].extraData1 * 0.99f + extraData[i].extraData2;
     extraData[i].extraData2 =
